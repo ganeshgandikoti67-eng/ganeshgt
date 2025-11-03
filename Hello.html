@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #welcomeBtn {
+            font-size: 1.25rem;
+            padding: 0.5rem 1rem;
+            background-color: #008000;
+            color: #ffffff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.15s ease;
+            border: none;
+        }
+
+        #welcomeBtn:hover {
+            background-color: #800000;
+            transform: translateY(-2px);
+        }
+
+        #welcomeBtn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.15);
+        }
+    </style>
 </head>
 <body>
+    <div>
+        <p>This is a simple HTML document with a button that shows an alert when clicked.</p>
+    </div>
     <main 
-    style="display:flex;align-items:center;justify-content:center;height:100vh;">
-        <button id="welcomeBtn" style="font-size:1.25rem;padding:0.5rem 1rem;color: green;">Click me</button>
+    style="display:flex;align-items:center;justify-content:center;height:10vh;">
+        <button id="welcomeBtn">Click me</button>
     </main>
 
     <script>
